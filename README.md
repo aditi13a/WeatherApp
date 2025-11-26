@@ -1,8 +1,29 @@
-# 🌦️ Weather App — Blazor WebAssembly  
 
-The Weather App — Blazor WebAssembly project is a modern single-page application (SPA) designed to deliver live, accurate, and visually engaging weather information for any global location. Built entirely using C# and .NET 8, the application leverages client-side WebAssembly execution, allowing the UI to load and run directly in the browser without requiring a backend server for general weather retrieval.
 
-The app integrates with the OpenWeatherMap API, fetching real-time meteorological data such as temperature, humidity, atmospheric pressure, wind speed, and cloud coverage. Each weather response triggers a dynamic UI update, including animated high-resolution background videos that visually represent the live conditions.
+
+
+🌦️ WeatherApp
+
+A Blazor WebAssembly Weather Application with ASP.NET Core API & MongoDB Integration
+
+📌 Overview
+
+WeatherApp is a full-stack Blazor WebAssembly application built as part of my summer internship at Wise Work, under the Software Trainee role.
+The project focuses on learning and applying:
+
+.NET & C# fundamentals
+
+Blazor WebAssembly front-end development
+
+ASP.NET Core Web API backend
+
+MongoDB CRUD operations
+
+API integration using OpenWeatherMap
+
+Real-world deployment workflows
+
+The application displays live weather information for any location, allows users to manage favourite locations, and enhances user experience with a dynamic weather-based video background.
 
 ---
 
@@ -10,51 +31,42 @@ The app integrates with the OpenWeatherMap API, fetching real-time meteorologica
 🔗 **https://relaxed-dodol-508da1.netlify.app/auth**
 
 ---
+✨ Key Features
+🌤️ Weather Search
 
-## 📌 Overview
-The Weather App provides real-time weather forecasts using the OpenWeatherMap API.  
-Each weather condition dynamically updates the background video (rain, snow, storm, clear, etc.) to create an immersive experience.
+Search weather by city name or pincode
 
-The project includes:
-- A Blazor WebAssembly **Client UI**
-- An optional ASP.NET Core **Server backend** (for history/favorites)
-- Animated video backgrounds
-- Responsive design
-- Completely static hosting with Netlify
+Temperature displayed in °C and °F
 
----
+Weather conditions, humidity, wind speed & more
 
-## ✨ Features
+⭐ Favorites
 
-### 🌤 Core Weather Features
-- Live weather by city
-- Temperature, humidity, pressure
-- “Feels Like” temperature
-- Wind speed and direction
-- Weather icons and descriptions
+Add / remove favourite locations
 
-### 🎬 Visual Experience
-- Dynamic background videos:
-  - Clear
-  - Sunny
-  - Cloudy
-  - Rain
-  - Snow
-  - Thunderstorm
-  - Default fallback
+Stored in MongoDB
 
-### 👤 User Experience
-- Recent search history
-- Favorites management (via server)
-- Clean and minimal UI
-- Auto geolocation (optional if enabled)
+Managed through a dedicated UI page
 
-### ⚙️ System
-- Deployed using Netlify static hosting
-- Optimized Blazor WebAssembly publish
-- SPA routing handled with `_redirects`
+🕒 Recent Searches
 
----
+Auto-maintained history of recent lookups
+
+🎥 Dynamic Weather Background
+
+Background video changes based on: rain, clear, cloudy, snow, default
+
+🔐 User Authentication (Supabase)
+
+Login / Signup functionality included
+
+🎨 Clean UI
+
+Modern responsive design
+
+Consistent color palette
+
+Minimal and intuitive layout
 
 ## 🧰 Tech Stack
 
