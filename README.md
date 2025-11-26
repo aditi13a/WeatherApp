@@ -66,7 +66,6 @@ The project includes:
 | Styling | Bootstrap + Custom CSS |
 | Hosting | Netlify (static hosting) |
 
----
 
-## 📁 Project Structure
+
 
