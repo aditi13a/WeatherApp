@@ -7,7 +7,7 @@ The app integrates with the OpenWeatherMap API, fetching real-time meteorologica
 ---
 
 ## 🚀 Live Demo
-🔗 **https://YOUR-NETLIFY-LINK.netlify.app**
+🔗 **https://relaxed-dodol-508da1.netlify.app/auth**
 
 ---
 
