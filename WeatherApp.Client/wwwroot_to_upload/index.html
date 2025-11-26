@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp.Client</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="WeatherApp.Client.styles.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- add inside <head> -->
+    <script>
+    // WARNING: visible in browser network/devtools. OK for demos only.
+    window.OPENWEATHER_API_KEY = "a08476b77942e9e11c55fef3afa4fc5c";
+    </script>
+</head>
+
+<script>
+    window.favorites = {
+        get: () => JSON.parse(localStorage.getItem('favorites') || '[]'),
+
+        add: (city) => {
+            let favs = JSON.parse(localStorage.getItem('favorites') || '[]');
+            if (!favs.includes(city)) {
+                favs.push(city);
+                localStorage.setItem('favorites', JSON.stringify(favs));
+            }
+        },
+
+        remove: (city) => {
+            let favs = JSON.parse(localStorage.getItem('favorites') || '[]');
+            favs = favs.filter(c => c !== city);
+            localStorage.setItem('favorites', JSON.stringify(favs));
+        },
+
+        toggle: (city) => {
+            let favs = JSON.parse(localStorage.getItem('favorites') || '[]');
+            if (favs.includes(city)) {
+                favs = favs.filter(c => c !== city);
+            } else {
+                favs.push(city);
+            }
+            localStorage.setItem('favorites', JSON.stringify(favs));
+        }
+    };
+</script>
+
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+
+</html>
