@@ -26,33 +26,33 @@ The application displays live weather information for any location, allows users
 
 🌤️ Weather Search
 
-Search weather by city name or pincode
-Temperature displayed in °C and °F
-Weather conditions, humidity, wind speed & more
+→ Search weather by city name or pincode
+→ Temperature displayed in °C and °F
+→ Weather conditions, humidity, wind speed & more
 
 ⭐ Favorites
 
-Add / remove favourite locations
-Stored in MongoDB
-Managed through a dedicated UI page
+→ Add / remove favourite locations
+→ Stored in MongoDB
+→ Managed through a dedicated UI page
 
 🕒 Recent Searches
 
-Auto-maintained history of recent lookups
+→ Auto-maintained history of recent lookups
 
 🎥 Dynamic Weather Background
 
-Background video changes based on: rain, clear, cloudy, snow, default
+→ Background video changes based on: rain, clear, cloudy, snow, default
 
 🔐 User Authentication (Supabase)
 
-Login / Signup functionality included
+→ Login / Signup functionality included
 
 🎨 Clean UI
 
-Modern responsive design
-Consistent color palette
-Minimal and intuitive layout
+→ Modern responsive design
+→ Consistent color palette
+→ Minimal and intuitive layout
 
 ## 🧰 Tech Stack
 
