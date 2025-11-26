@@ -1,6 +1,8 @@
 # 🌦️ Weather App — Blazor WebAssembly  
-A modern, responsive weather forecasting application built using **Blazor WebAssembly (.NET 8)** with animated backgrounds, real-time weather data, and a clean UI.  
-Deployed on **Netlify** as a fully static WebAssembly application.
+
+The Weather App — Blazor WebAssembly project is a modern single-page application (SPA) designed to deliver live, accurate, and visually engaging weather information for any global location. Built entirely using C# and .NET 8, the application leverages client-side WebAssembly execution, allowing the UI to load and run directly in the browser without requiring a backend server for general weather retrieval.
+
+The app integrates with the OpenWeatherMap API, fetching real-time meteorological data such as temperature, humidity, atmospheric pressure, wind speed, and cloud coverage. Each weather response triggers a dynamic UI update, including animated high-resolution background videos that visually represent the live conditions.
 
 ---
 
